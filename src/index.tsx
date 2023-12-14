@@ -2,7 +2,7 @@ import React from 'react'
 import ActionSheetHeader from './header'
 
 export type ActionSheetType = React.FunctionComponent & {
-  Header: React.FC
+  Header: typeof ActionSheetHeader
 }
 
 export const ActionSheet: ActionSheetType = ({ children }): JSX.Element => <>{children}</>;
