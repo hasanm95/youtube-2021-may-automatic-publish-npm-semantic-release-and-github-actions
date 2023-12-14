@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react'
 import ActionSheetHeader from './header'
 
-type ActionSheetType = {
+export type ActionSheetType = {
   Header: typeof ActionSheetHeader
 }
 
