@@ -1,7 +1,7 @@
 import React from 'react'
 import ActionSheetHeader from './header'
 
-export type ActionSheetType = React.FunctionComponent & {
+export type ActionSheetType = React.FC & {
   Header: typeof ActionSheetHeader
 }
 
