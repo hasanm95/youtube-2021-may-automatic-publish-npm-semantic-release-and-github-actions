@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react'
 import ActionSheetHeader from './header'
 
 export interface ActionSheetType {
-  Header: typeof ActionSheetHeader
+  Header: React.FC<typeof ActionSheetHeader>
 }
 
 export const ActionSheet: ActionSheetType = ({
