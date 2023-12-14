@@ -3,7 +3,7 @@ import { createPortal } from 'react-dom'
 import qtMerge from 'clsx'
 import HandleBar from '../handle-bar'
 import { actionSheetRootCVA } from '../action-sheet.classnames'
-import { useSwipeBlock } from '../hook'
+import { useSwipeBlock } from './hook'
 import { ActionSheetContext } from '../root'
 import { useSsr } from 'usehooks-ts'
 
