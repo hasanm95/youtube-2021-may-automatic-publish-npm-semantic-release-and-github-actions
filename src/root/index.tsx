@@ -20,9 +20,9 @@ const Root = ({
 }: RootProps) => {
   const { isServer } = useSsr()
 
-  if (isServer) return null
-  
   const [show, setShow] = useState(false)
+
+  if (isServer) return null
 
   const handleOpen = () => {
     setShow(true)
