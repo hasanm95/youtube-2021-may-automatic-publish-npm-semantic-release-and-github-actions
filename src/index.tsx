@@ -1,18 +1,10 @@
-import React, { ReactNode } from 'react'
-import ActionSheetHeader from './header'
+import React from 'react'
 
-export type ActionSheetType = {
-  Header: typeof ActionSheetHeader
-}
 
-export const ActionSheet: ActionSheetType = ({
+export const ActionSheet: React.FC = ({
   children,
-}: {
-  children: ReactNode
 }) => {
   return <>{children}</>
 }
-
-ActionSheet.Header = ActionSheetHeader
 
 export default ActionSheet
