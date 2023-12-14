@@ -1,4 +1,5 @@
 import React,{ useState, createContext } from 'react'
+import { useSsr } from 'usehooks-ts'
 import { RootProps } from '../types'
 
 type ActionSheetContextType = RootProps & {
@@ -17,6 +18,10 @@ const Root = ({
   type = 'modal',
   expandable = true,
 }: RootProps) => {
+  const { isServer } = useSsr()
+
+  if (isServer) return null
+  
   const [show, setShow] = useState(false)
 
   const handleOpen = () => {

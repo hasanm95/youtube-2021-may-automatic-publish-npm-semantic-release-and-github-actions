@@ -5,7 +5,6 @@ import HandleBar from '../handle-bar'
 import { actionSheetRootCVA } from '../action-sheet.classnames'
 import { useSwipeBlock } from './hook'
 import { ActionSheetContext } from '../root'
-import { useSsr } from 'usehooks-ts'
 
 type PortalProps = ComponentProps<'div'>
 
@@ -16,9 +15,6 @@ const Portal = ({ children, ...restProps }: PortalProps) => {
     show,
     onClose: handleClose,
   })
-  const { isServer } = useSsr()
-
-  if (isServer) return null
 
   return (
     <>
